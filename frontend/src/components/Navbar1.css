@@ -84,11 +84,11 @@
   opacity: 0.8;
 }
 
-.language-switcher {
+.language-switcher1 {
   margin-left: 15px;
 }
 
-.language-switcher select {
+.language-switcher1 select {
   background-color: transparent;
   color: #ffffff;
   border: none;
@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-.language-switcher select:hover {
+.language-switcher1 select:hover {
   opacity: 0.8;
   background-color: #000000;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navbar1.css';
-import Header from './Header';
 
 const Navbar = () => {
   return (
@@ -18,7 +17,7 @@ const Navbar = () => {
       <div className="navbar-buttons">
         <button className="btn-login">Log In</button>
         <button className="btn-signup">Sign Up</button>
-        <div className="language-switcher">
+        <div className="language-switcher1">
           <select>
             <option value="en">English</option>
             <option value="fr">Français</option>
