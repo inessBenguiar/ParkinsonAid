@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavbarLog from './NavbarLog';
+import Nav from './Nav';
 import './LoginPage.css';
 
 function Login() {
@@ -14,7 +14,7 @@ function Login() {
 
   return (
     <>
-      <NavbarLog />
+      <Nav />
       <div className="login-container">
       <div className="photo-section"></div>
         <div className="login-box">
@@ -48,7 +48,7 @@ function Login() {
           </form>
           <div className="login-footer">
             <a href="/signup">Create an Account</a>
-            <a href="/forgot-password">Forgot Password?</a>
+            <a href="/forgot-password">Forgot Password ?</a>
           </div>
         </div>
       </div>
