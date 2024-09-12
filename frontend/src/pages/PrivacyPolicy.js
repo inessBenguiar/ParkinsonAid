@@ -103,7 +103,7 @@ function PrivacyPolicy() {
             </main>
 
             <footer className="footerP">
-                <button className="back-button">Back</button>
+                <button className="back-buttonp">Back</button>
             </footer>
         </div>
     );

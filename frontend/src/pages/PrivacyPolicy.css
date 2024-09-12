@@ -73,7 +73,7 @@
 }
 
 /* Back Button in Footer */
-.back-button {
+.back-buttonp {
     background-color: #12C675;
     color: white;
     padding: 0.75rem 2rem;
@@ -84,7 +84,7 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.back-button:hover {
+.back-buttonp:hover {
     background-color: #12c6758c;
 }
 
