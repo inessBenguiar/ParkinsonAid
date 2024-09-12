@@ -1,50 +1,45 @@
-body {
-    margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-image: url('../assets/images/background loginpage.jpg'); /* Remplace par le chemin de ton image */
-  background-size: cover; /* Pour que l'image prenne toute la place */
-  background-position: center; /* Centrer l'image */
-  background-repeat: no-repeat; /* Pour éviter que l'image se répète */
-  height: 100vh; /* S'assure que le fond prend toute la hauteur */
-  color: white;
-  background-color: #A3FFC8;
+/* Styles spécifiques à la page de login */
+.login-page {
+    background-image: url('../assets/images/background loginpage.jpg'); /* Remplace par le chemin de ton image */
+    background-size: cover; /* Pour que l'image prenne toute la place */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    height: 100vh; /* S'assure que le fond prend toute la hauteur */
+    background-color: #A3FFC8; /* Couleur de fond de secours */
 }
 
 .login-container {
     display: flex;
-    justify-content: flex-start; /* Aligne les éléments à gauche */
-    align-items: center;
-    height: 100vh;
-    padding-left: 50px; /* Espace à gauche pour la photo */
-  }
-  .photo-section {
-    width: 500px; /* Occupation de 50% de l'écran pour la photo */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
     height: 100%;
+}
+
+.photo-section {
+    width: 40%; /* Réduit la largeur à 40% */
+    height: 90%; /* Ajuste la hauteur pour éviter que l'image prenne trop de place */
     background-image: url('../assets/images/doctor img.jpg'); /* Remplace par l'image de la photo */
     background-size: cover;
     background-position: center;
     margin-right: 20px;
-  }
+}
 
 .login-box {
+    width: 40%; /* Réduit également la largeur de la section login pour un meilleur équilibre */
+    padding: 40px;
+    background-image: url('../assets/images/loginSectionTransp.png'); /* Remplace par le chemin de l'image de fond pour la section login */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
     
-        background-image: url('../assets/images/loginSectionTransp.png'); /* Remplace par le chemin de l'image de fond pour la section login */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        padding: 40px;
-        width: 350px;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        color: white; /* Texte blanc pour contraster avec l'image */
-      
+    text-align: center;
+    background-color: transparent; /* Optionnel: Ajoute un fond sombre semi-transparent pour améliorer la lisibilité du texte */
 }
 
 .login-title {
     font-size: 28px;
-    color: #333;
+    color: #000000; /* Texte blanc pour contraster avec l'image */
     margin-bottom: 20px;
 }
 
@@ -55,7 +50,7 @@ body {
 
 .input-group label {
     font-size: 14px;
-    color: #666;
+    color: #242424;
     margin-bottom: 5px;
     display: block;
 }
@@ -74,8 +69,9 @@ body {
     background-color: #1abc9c;
     border: none;
     color: white;
+    font-weight: bold;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -92,8 +88,9 @@ body {
 
 .login-footer a {
     font-size: 14px;
-    color: #333;
+    color: #000000;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .login-footer a:hover {
