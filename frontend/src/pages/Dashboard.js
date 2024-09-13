@@ -1,10 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import Nav from "../components/Nav";
 import './Dashboard.css';
-import { Bar } from 'react-chartjs-2'; // Import Bar chart from react-chartjs-2
+import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
-// Register required components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 function Dashboard() {
@@ -24,14 +23,12 @@ function Dashboard() {
         setSearchQuery(event.target.value);
     };
 
-    // Mock data for both genders and diagnoses
     const mockData = [
         { date: '2024-09-01', male: 30, female: 20, positive: 10, negative: 5 },
         { date: '2024-09-02', male: 25, female: 30, positive: 8, negative: 3 },
         { date: '2024-09-03', male: 20, female: 25, positive: 12, negative: 6 }
     ];
 
-    // Memoized function to avoid unnecessary re-renders
     const chartData = useMemo(() => {
         return mockData.map(data => ({
             date: data.date,
@@ -74,10 +71,8 @@ function Dashboard() {
                     />
                 </div>
 
-
-                <h2 className="gender-heading">Gender Data :</h2>
+                <h2 className="gender-heading">Gender Data:</h2>
                 <div className="calendar-grid">
-                    {/* Render each day's data with two charts: gender and diagnosis */}
                     {chartData.map((data, index) => (
                         <div key={index} className="calendar-day">
                             <p>{data.date}</p>
@@ -88,9 +83,9 @@ function Dashboard() {
                         </div>
                     ))}
                 </div>
-                <h2 className="diagnosis-heading">Diagnosis Data :</h2>
-                <div className="calendar-grid2">
-                    {/* Render each day's data with two charts: gender and diagnosis */}
+
+                <h2 className="diagnosis-heading">Diagnosis Data:</h2>
+                <div className="calendar-grid">
                     {chartData.map((data, index) => (
                         <div key={index} className="calendar-day">
                             <p>{data.date}</p>
@@ -113,4 +108,5 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
 
