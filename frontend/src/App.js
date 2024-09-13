@@ -1,12 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import LoginPage from './pages/LoginPage';
+import HistoryPageContainer from './pages/HistoryPage';
 
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <HistoryPageContainer />
     </div>
   );
 }
