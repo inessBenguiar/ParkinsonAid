@@ -10,12 +10,13 @@ import PrivacyPage from './pages/PrivacyPage';
 import SignupPage from './pages/SignupPage';
 import Upload from './pages/Upload';
 import HistoryPage from './pages/HistoryPage';
+import Prediction from './pages/Prediction';
 
 
 function App() {
   return (
       <div className="App">
-      <HistoryPage/>
+      <Prediction/>
       </div>
   );
 }
