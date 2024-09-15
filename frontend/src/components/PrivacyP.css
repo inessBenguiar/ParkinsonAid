@@ -73,7 +73,7 @@
 }
 
 /* Back Button in Footer */
-.back-buttonp {
+.back-button {
     background-color: #12C675;
     color: white;
     padding: 0.75rem 2rem;
@@ -84,7 +84,7 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.back-buttonp:hover {
+.back-button:hover {
     background-color: #12c6758c;
 }
 
@@ -93,5 +93,3 @@
 .main-content ul li.no-bullet::before {
     content: '';
 }
-
-
