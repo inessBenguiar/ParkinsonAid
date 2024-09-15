@@ -9,12 +9,13 @@ import LoginPage from './pages/LoginPage';
 import PrivacyPage from './pages/PrivacyPage';
 import SignupPage from './pages/SignupPage';
 import Upload from './pages/Upload';
+import HistoryPage from './pages/HistoryPage';
 
 
 function App() {
   return (
       <div className="App">
-      <Upload/>
+      <HistoryPage/>
       </div>
   );
 }
