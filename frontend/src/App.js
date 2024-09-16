@@ -1,12 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import HistoryPageContainer from './pages/HistoryPage';
+import ViewMorePatientPageWrapper from './pages/ViewMorePatient';
 
 function App() {
   return (
     <div className="App">
-      <HistoryPageContainer />
+      <ViewMorePatientPageWrapper />
     </div>
   );
 }
