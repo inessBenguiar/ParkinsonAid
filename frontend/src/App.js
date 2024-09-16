@@ -8,15 +8,17 @@ import Contact from './pages/Contact';
 import LoginPage from './pages/LoginPage';
 import PrivacyPage from './pages/PrivacyPage';
 import SignupPage from './pages/SignupPage';
+import Dashboard from './pages/Dashboard';
 import Upload from './pages/Upload';
 import HistoryPage from './pages/HistoryPage';
 import Prediction from './pages/Prediction';
+import Profiledr from './pages/Profiledr';
 
 
 function App() {
   return (
       <div className="App">
-      <Prediction/>
+      <Profiledr/>
       </div>
   );
 }
