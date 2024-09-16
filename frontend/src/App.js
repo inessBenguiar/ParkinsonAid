@@ -1,12 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import ViewMorePatientPageWrapper from './pages/ViewMorePatient';
+import ProfilDoctorPage from './pages/ProfilDoctor';
 
 function App() {
   return (
     <div className="App">
-      <ViewMorePatientPageWrapper />
+      <ProfilDoctorPage />
     </div>
   );
 }
