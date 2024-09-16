@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProfilDoctor.css';
+import Nav from './Nav';
 import defaultProfilePic from '../assets/images/profile-place.jpg';  // Place l'image par défaut ici
 
 const ProfilDoctor = () => {
@@ -41,6 +42,7 @@ const ProfilDoctor = () => {
 
   return (
     <div className="profil-doctor-page">
+        <Nav />
       <form className="doctor-form" onSubmit={handleSubmit}>
         <h2>Doctor's Profile</h2>
         <div className="form-group">
