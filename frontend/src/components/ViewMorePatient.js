@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './ViewMorePatient.css';
 import Nav from './Nav';
+import { useTranslation } from 'react-i18next';  // Import de la bibliothèque de traduction
 
 const ViewMorePatientPage = () => {
+  const { t } = useTranslation();  // Utilisation du hook de traduction
+
   // Simuler la récupération des informations depuis le backend
   const [patientData, setPatientData] = useState(null);
 
@@ -35,76 +38,75 @@ const ViewMorePatientPage = () => {
   }, []);
 
   if (!patientData) {
-    return <div>Loading...</div>;
+    return <div>{t('viewMorePatient.loading')}</div>;  // Message de chargement
   }
 
   return (
     <div className="view-more-patient-page">
       <Nav />
       <div className="patient-details">
-        <h2>Patient Information</h2>
+        <h2>{t('viewMorePatient.title')}</h2>
         <div className="info-group">
-          <label>Name:</label>
+          <label>{t('viewMorePatient.name')}:</label>
           <p>{patientData.name}</p>
         </div>
         <div className="info-group">
-          <label>ID Patient:</label>
+          <label>{t('viewMorePatient.id')}:</label>
           <p>{patientData.id}</p>
         </div>
         <div className="info-group">
-          <label>Date Of Birthday:</label>
+          <label>{t('viewMorePatient.birthday')}:</label>
           <p>{patientData.birthday}</p>
         </div>
         <div className="info-group">
-          <label>Sexe:</label>
+          <label>{t('viewMorePatient.gender')}:</label>
           <p>{patientData.gender}</p>
         </div>
         <div className="info-group">
-          <label>Phone Number:</label>
+          <label>{t('viewMorePatient.phone')}:</label>
           <p>{patientData.phone}</p>
         </div>
         <div className="info-group">
-          <label>Email Address:</label>
+          <label>{t('viewMorePatient.email')}:</label>
           <p>{patientData.email}</p>
         </div>
         <div className="info-group">
-          <label>Number Of IRM Images:</label>
+          <label>{t('viewMorePatient.numberOfIRM')}:</label>
           <p>{patientData.numberOfIRM}</p>
         </div>
         <div className="info-group">
-          <label>Diagnosis Result:</label>
+          <label>{t('viewMorePatient.diagnosisResult')}:</label>
           <p>{patientData.diagnosisResult}</p>
         </div>
         <div className="info-group">
-          <label>Description:</label>
+          <label>{t('viewMorePatient.description')}:</label>
           <p>{patientData.description}</p>
         </div>
         <div className="info-group">
-          <label>Date Of Last Update:</label>
+          <label>{t('viewMorePatient.lastUpdate')}:</label>
           <p>{patientData.lastUpdate}</p>
         </div>
         <div className="info-group">
-          <label>Name Of Doctor:</label>
+          <label>{t('viewMorePatient.doctorName')}:</label>
           <p>{patientData.doctorName}</p>
         </div>
 
-        <h3>Person To Contact In Case Of Emergency</h3>
+        <h3>{t('viewMorePatient.emergencyContact.title')}</h3>
         <div className="info-group">
-          <label>Name:</label>
+          <label>{t('viewMorePatient.emergencyContact.name')}:</label>
           <p>{patientData.emergencyContact.name}</p>
         </div>
         <div className="info-group">
-          <label>Relation With Patient:</label>
+          <label>{t('viewMorePatient.emergencyContact.relation')}:</label>
           <p>{patientData.emergencyContact.relation}</p>
         </div>
         <div className="info-group">
-          <label>Phone Number:</label>
+          <label>{t('viewMorePatient.emergencyContact.phone')}:</label>
           <p>{patientData.emergencyContact.phone}</p>
         </div>
         <div className="form-submit">
-        {/* Bouton Back sans fonctionnalité de navigation */}
-        <button type="button" className="back-button">Back</button>
-      </div>
+          <button type="button" className="back-button">{t('viewMorePatient.backButton')}</button>  {/* Bouton Back */}
+        </div>
       </div>
     </div>
   );

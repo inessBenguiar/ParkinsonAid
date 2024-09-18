@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';  // Import pour la traduction
 import Nav from "./Nav";
 import './Dashboard.css';
 import { Bar } from 'react-chartjs-2';
@@ -7,11 +8,12 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 function Dashboard() {
+    const { t } = useTranslation();  // Hook pour la traduction
     const [isConnected, setIsConnected] = useState(true);
     const [searchQuery, setSearchQuery] = useState("");
 
     const userProfile = {
-      name: 'John Doe',
+      name: 'John Doe',  // Peut être modifié dynamiquement
       image: 'https://via.placeholder.com/40',
     };
 
@@ -60,18 +62,18 @@ function Dashboard() {
             <Nav userProfile={isConnected ? userProfile : null} handleLogout={handleLogout} />
 
             <div className="dashboard-content">
-                <h1>Welcome, Dr {userProfile.name}!</h1>
+                <h1>{t('dashboard.welcome', { name: userProfile.name })}</h1>
 
                 <div className="search-bar">
                     <input 
                         type="text" 
-                        placeholder="Search for patients..." 
+                        placeholder={t('dashboard.searchPlaceholder')} 
                         value={searchQuery} 
                         onChange={handleSearch} 
                     />
                 </div>
 
-                <h2 className="gender-heading">Gender Data:</h2>
+                <h2 className="gender-heading">{t('dashboard.genderHeading')}</h2>
                 <div className="calendar-grid">
                     {chartData.map((data, index) => (
                         <div key={index} className="calendar-day">
@@ -84,7 +86,7 @@ function Dashboard() {
                     ))}
                 </div>
 
-                <h2 className="diagnosis-heading">Diagnosis Data:</h2>
+                <h2 className="diagnosis-heading">{t('dashboard.diagnosisHeading')}</h2>
                 <div className="calendar-grid">
                     {chartData.map((data, index) => (
                         <div key={index} className="calendar-day">
@@ -98,9 +100,9 @@ function Dashboard() {
                 </div>
 
                 <div className="dashboard-buttons">
-                    <button className="dashboard-button">View Diagnosis History</button>
-                    <button className="dashboard-button">New Diagnosis</button>
-                    <button className="dashboard-button">Update Profile</button>
+                    <button className="dashboard-button">{t('dashboard.viewHistoryButton')}</button>
+                    <button className="dashboard-button">{t('dashboard.newDiagnosisButton')}</button>
+                    <button className="dashboard-button">{t('dashboard.updateProfileButton')}</button>
                 </div>
             </div>
         </div>

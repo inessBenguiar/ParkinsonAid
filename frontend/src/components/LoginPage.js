@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
 import './LoginPage.css';
+import { useTranslation } from 'react-i18next';
 
 function Login() {
+  const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -19,37 +21,37 @@ function Login() {
         <div className="login-container">
           <div className="photo-section"></div>
           <div className="login-box">
-            <h1 className="login-title">Login</h1>
+            <h1 className="login-title">{t('login.title')}</h1>
             <form onSubmit={handleSubmit}>
               <div className="input-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t('login.emailLabel')}</label>
                 <input
                   type="email"
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
+                  placeholder={t('login.emailPlaceholder')}
                   required
                 />
               </div>
               <div className="input-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">{t('login.passwordLabel')}</label>
                 <input
                   type="password"
                   id="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Enter your password"
+                  placeholder={t('login.passwordPlaceholder')}
                   required
                 />
               </div>
               <button type="submit" className="login-button">
-                Login
+                {t('login.loginButton')}
               </button>
             </form>
             <div className="login-footer">
-              <a href="/signup">Create an Account</a>
-              <a href="/forgot-password">Forgot Password ?</a>
+              <a href="/signup">{t('login.createAccount')}</a>
+              <a href="/forgot-password">{t('login.forgotPassword')}</a>
             </div>
           </div>
         </div>

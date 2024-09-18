@@ -1,0 +1,285 @@
+{
+    "nav": {
+    "menu": "Menu",
+    "about": "À propos",
+    "contact": "Contact",
+    "languageSwitcher": {
+      "en": "Anglais",
+      "fr": "Français"
+    },
+    "logout": "Déconnexion"
+  },
+    "about": {
+      "title": "À propos de ",
+      "sections": {
+        "projectInfoTitle": "Informations sur le Projet",
+        "projectInfo": "PARKINSON AID est une application web conçue pour aider les neurologues dans le diagnostic de la maladie de Parkinson en utilisant des images IRM. La plateforme permet aux professionnels de la santé de télécharger plusieurs IRM simultanément et de recevoir un résultat binaire indiquant la présence ou l'absence de la maladie de Parkinson. Dans le cadre d'un stage pratique, ce travail est réalisé par une paire d'étudiants.",
+        "technicalDetailsTitle": "Détails Techniques",
+        "technicalDetails": "Notre projet utilise des techniques d'apprentissage automatique pour aider les médecins dans le diagnostic de la maladie de Parkinson à l'aide des images IRM. Il utilise le jeu de données NTUA Parkinson’s. Avant de nourrir les images dans nos modèles, nous appliquons plusieurs techniques de prétraitement pour améliorer leur qualité et les rendre plus adaptées à l'analyse, puis nous entraînons notre modèle à apprendre les différences entre les cerveaux sains et ceux affectés par Parkinson."
+      },
+      "visionMissionValues": {
+        "title": "Notre Vision, Mission et Valeurs",
+        "visionTitle": "Vision",
+        "vision": "Notre vision est de révolutionner le diagnostic précoce de la maladie de Parkinson grâce à une technologie innovante, rendant les outils diagnostiques avancés accessibles aux professionnels de santé. Nous visons à permettre aux prestataires de soins de santé de disposer de solutions précises, efficaces et fiables qui améliorent les soins aux patients et les résultats.",
+        "missionTitle": "Mission",
+        "mission": "Notre mission est de développer une plateforme conviviale, alimentée par l'IA, qui aide les neurologues dans le diagnostic opportun et précis de la maladie de Parkinson. Nous nous efforçons de combler le fossé entre la technologie de pointe et la pratique clinique en offrant un outil robuste qui simplifie le processus de diagnostic, permettant aux médecins de se concentrer sur les soins aux patients.",
+        "valuesTitle": "Valeurs",
+        "values": {
+          "valueone": "-   Précision :",
+          "valueonetext": "Assurer le plus haut niveau de précision diagnostique est notre priorité absolue, car nous comprenons l'importance cruciale des évaluations médicales précises.",
+          "valuetwo": "-   Accessibilité : ",
+          "valuetwotext": "Nous croyons en rendant les technologies diagnostiques avancées accessibles à tous les prestataires de soins de santé, indépendamment de leur emplacement ou de leurs ressources.",
+          "valuethree": "-   Collaboration: ",
+          "valuethreetext": " Nous valorisons la puissance du travail d'équipe et de la collaboration, en travaillant en étroite collaboration avec les professionnels de santé pour améliorer continuellement notre plateforme en fonction de leurs retours et de leurs besoins.",
+          "valuefour": "-   Intégrité : ",
+          "valuefourtext": "Nous respectons les plus hauts standards d'intégrité dans notre travail, en veillant à la confidentialité et à la sécurité des données des patients tout en fournissant des résultats fiables.",
+          "valuefive": "-   Empathie : ",
+          "valuefivetext": "Nous reconnaissons l'élément humain dans les soins de santé et nous nous efforçons de soutenir les médecins et les patients avec des solutions centrées sur l'utilisateur et empreintes de compassion."
+        
+        }
+      },
+      "team": {
+        "title": "Équipe",
+        "members": {
+          "ikram": {
+            "name": "ZERROUKI Ikram",
+            "description": "Étudiante en informatique à l'École Supérieure d'Informatique - ESI",
+            "linkedin": "LinkedIn",
+            "gmail": "Gmail"
+          },
+          "safia": {
+            "name": "BENGUIAR Safia Ines",
+            "description": "Étudiante en informatique à l'École Supérieure d'Informatique - ESI",
+            "linkedin": "LinkedIn",
+            "gmail": "Gmail"
+          }
+        }
+      },
+      "supervisedBy": {
+        "title": "Supervisé Par",
+        "name": "Mme Boulkrinat Nour El Houda",
+        "position": "Attachée de recherche - Division des Systèmes d'Information et des Systèmes Multimédia (DSISM)",
+        "organization": "Centre de Recherche sur l'Information Scientifique et Technique - CERIST",
+        "address": "5 Rue des 3 Frères Aïssou, Ben Aknoun BP 16030 Alger",
+        "phone": "Téléphone : 021 91 21 86",
+        "email": "Email : nboulkrinat@cerist.dz, nboulkrinat@cerist.dz"
+      }
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "formInstructions": "Veuillez remplir le formulaire ci-dessous pour nous envoyer un email et nous vous répondrons dès que possible.",
+      "namePlaceholder": "Nom",
+      "emailPlaceholder": "Email",
+      "subjectPlaceholder": "Sujet",
+      "messagePlaceholder": "Message",
+      "submitButton": "Envoyer",
+      "feedbackTitle": "Envoyer des commentaires",
+      "feedbackInstructions": "Vos retours sont importants pour nous ! Faites-nous savoir comment nous pouvons améliorer notre service ou partagez vos réflexions sur ParkinsonAid.",
+      "feedbackButton": "Remplir le formulaire",
+      "contactInfoTitle": "Informations de contact",
+      "address": "5 Rue des 3 Frères Aïssou, Ben Aknoun BP 16030 Alger",
+      "phone": "021 91 21 86",
+      "email": "nboulkrinat@cerist.dz , nboulkrinat@gmail.com"
+    },
+    
+      "dashboard": {
+        "welcome": "Bienvenue, Dr {{name}} !",
+        "searchPlaceholder": "Rechercher des patients...",
+        "genderHeading": "Données sur le genre :",
+        "diagnosisHeading": "Données de diagnostic :",
+        "viewHistoryButton": "Voir l'historique des diagnostics",
+        "newDiagnosisButton": "Nouveau diagnostic",
+        "updateProfileButton": "Mettre à jour le profil"
+      },
+      "history": {
+    "title": "Historique des diagnostics",
+    "filterButton": "Filtrer",
+    "filterByName": "Par nom du patient",
+    "filterByDoctor": "Par nom du docteur",
+    "filterByDate": "Par date",
+    "searchPlaceholder": "Rechercher des patients...",
+    "refBy": "Réf par",
+    "diagnosis": "Diagnostic",
+    "positive": "Oui",
+    "negative": "Non",
+    "viewMore": "Voir plus",
+    "update": "Mettre à jour"
+  },
+  "login": {
+    "title": "Connexion",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Entrez votre email",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "loginButton": "Se connecter",
+    "createAccount": "Créer un compte",
+    "forgotPassword": "Mot de passe oublié ?"
+  },
+  "prediction": {
+    "title": "Résultats de la Prédiction",
+    "uploadedImages": "Vous avez téléchargé 3 images IRM",
+    "predictionResult": "Les images IRM indiquent une forte probabilité de maladie de Parkinson.",
+    "saveButton": "Enregistrer",
+    "exitButton": "Quitter"
+  },
+  
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "intro": "Chez ParkinsonAid, développé par CERIST (Centre de Recherche sur l'Information Scientifique et Technique), votre confidentialité est importante pour nous. Nous comprenons l'importance de protéger la confidentialité et la confidentialité des informations personnelles et médicales. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons les données que vous soumettez via notre plateforme, spécialement conçue pour les professionnels de la santé.",
+      "section1": {
+        "title": "1. Informations que nous collectons",
+        "content": "Nous collectons des images IRM et des données médicales connexes uniquement dans le but de fournir une analyse assistée par IA pour détecter la maladie de Parkinson. Ces données sont traitées avec le plus haut niveau de confidentialité."
+      },
+      "section2": {
+        "title": "2. Comment nous utilisons vos informations",
+        "content": "Les données collectées sur ParkinsonAid sont exclusivement utilisées pour les finalités suivantes:"
+      },
+      "section3": {
+        "title": "3. Partage et divulgation des données",
+        "content": "Aucune donnée personnelle ou information médicale n'est utilisée à des fins commerciales ou de marketing, ni partagée avec des tiers à des fins de recherche sans votre consentement explicite."
+      },
+      "section4": {
+        "title": "4. Sécurité des données",
+        "content": "Nous prenons la sécurité des données très au sérieux et mettons en œuvre des mesures conformes aux standards de l'industrie pour assurer que toutes les informations personnelles et médicales soient stockées et traitées en toute sécurité."
+      },
+      "section5": {
+        "title": "5. Conservation des données",
+        "content": "Les données médicales soumises à ParkinsonAid sont conservées uniquement pendant le temps nécessaire pour effectuer l'analyse IA et fournir les résultats."
+      },
+      "section6": {
+        "title": "6. Vos droits en matière de confidentialité",
+        "content": "En tant que professionnel de la santé utilisant ParkinsonAid, vous avez les droits suivants concernant vos données :"
+      },
+      "section7": {
+        "title": "7. Liens tiers",
+        "content": "Notre plateforme peut contenir des liens vers des sites Web externes. Veuillez noter que cette politique de confidentialité ne s'applique pas à ces sites tiers."
+      },
+      "section8": {
+        "title": "8. Modifications de cette politique de confidentialité",
+        "content": "Nous nous réservons le droit de mettre à jour cette politique de confidentialité de temps à autre pour refléter les changements dans la réglementation ou nos services."
+      },
+      "section9": {
+        "title": "9. Nous contacter",
+        "content": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter :"
+      },
+      "backButton": "Retour"
+    },
+    
+      "savePatient": {
+        "patientTitle": "Patient",
+        "nameLabel": "Nom",
+        "namePlaceholder": "Entrez le nom du patient",
+        "idLabel": "ID Patient",
+        "idPlaceholder": "Entrez l'ID du patient",
+        "dobLabel": "Date de naissance",
+        "genderLabel": "Sexe",
+        "genderPlaceholder": "Sélectionnez le sexe",
+        "male": "Homme",
+        "female": "Femme",
+        "phoneLabel": "Numéro de téléphone",
+        "phonePlaceholder": "Entrez le numéro de téléphone",
+        "emailLabel": "Adresse e-mail",
+        "emailPlaceholder": "Entrez l'adresse e-mail",
+        "irmLabel": "Nombre d'images IRM",
+        "irmPlaceholder": "Entrez le nombre",
+        "diagnosisLabel": "Résultat du diagnostic",
+        "diagnosisPlaceholder": "Entrez le résultat du diagnostic",
+        "descriptionLabel": "Description",
+        "descriptionPlaceholder": "Entrez la description",
+        "updateLabel": "Date de la dernière mise à jour",
+        "doctorLabel": "Nom du docteur",
+        "doctorPlaceholder": "Entrez le nom du docteur",
+        "emergencyTitle": "Personne à contacter en cas d'urgence - Tapez (/) si aucun",
+        "emergencyNameLabel": "Nom",
+        "emergencyNamePlaceholder": "Entrez le nom du contact d'urgence",
+        "relationLabel": "Relation avec le patient",
+        "relationPlaceholder": "Entrez la relation",
+        "emergencyPhoneLabel": "Numéro de téléphone",
+        "emergencyPhonePlaceholder": "Entrez le numéro de téléphone",
+        "submitButton": "Soumettre"
+      },
+    "signup": {
+    "title": "Inscription",
+    "nameLabel": "Nom",
+    "emailLabel": "Email",
+    "passwordLabel": "Mot de passe",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre email",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "agreeTerms": "J'ai lu et j'accepte les",
+    "termsLink": "termes et conditions",
+    "errorMessage": "Vous devez accepter les termes et conditions avant de vous inscrire.",
+    "alreadyAccount": "Vous avez déjà un compte?",
+    "loginLink": "Connexion",
+    "signupButton": "S'inscrire"
+  },
+  "termsTitle": "Conditions générales",
+  "termsWelcome": "Bienvenue sur ParkinsonAid, une plateforme dédiée à fournir une analyse avancée basée sur l'IA des images IRM pour la détection précoce de la maladie de Parkinson. En accédant ou en utilisant notre plateforme, vous acceptez de vous conformer aux conditions générales suivantes. Veuillez les lire attentivement, car elles régissent votre utilisation de notre site Web et de nos services.",
+  "termsAcceptanceTitle": "1. Acceptation des Conditions",
+  "termsAcceptance": "En utilisant ParkinsonAid, vous reconnaissez que vous êtes un professionnel de santé agréé et que vous acceptez d'être lié par ces conditions. Votre utilisation continue de la plateforme constitue une acceptation des mises à jour ou des révisions de ces conditions.",
+  "termsProfessionalUseTitle": "2. Usage Professionnel Uniquement",
+  "termsProfessionalUse": "Cette plateforme est exclusivement destinée à un usage par des prestataires de soins de santé qualifiés, notamment des médecins, des neurologues et d'autres professionnels de la santé. L'analyse fournie par notre modèle IA est conçue pour aider à la prise de décision clinique mais ne remplace pas le jugement clinique ou les processus de diagnostic.",
+  "termsDataPrivacyTitle": "3. Confidentialité et Protection des Données",
+  "termsDataPrivacy": "Nous nous engageons à protéger la confidentialité des données médicales de vos patients. En utilisant ParkinsonAid, vous consentez au traitement sécurisé des images IRM des patients et de toute autre donnée fournie pour analyse.",
+  "termsMedicalDisclaimerTitle": "4. Avertissement Médical",
+  "termsMedicalDisclaimer": "L'analyse IA fournie par ParkinsonAid est destinée à être utilisée comme un outil supplémentaire pour soutenir l'évaluation clinique de la maladie de Parkinson.",
+  "termsDataSecurityTitle": "5. Sécurité et Intégrité des Données",
+  "termsDataSecurity": "ParkinsonAid met en œuvre des mesures de sécurité pour protéger les données des patients et garantir l'intégrité de nos modèles IA. Cependant, nous ne pouvons garantir une protection absolue contre les violations potentielles de données.",
+  "termsIntellectualPropertyTitle": "6. Propriété Intellectuelle",
+  "termsIntellectualProperty": "Les droits de propriété intellectuelle sur tout le contenu et les logiciels de la plateforme ParkinsonAid, y compris les modèles IA, appartiennent à ParkinsonAid ou à nos concédants.",
+  "termsLiabilityTitle": "7. Limitation de Responsabilité",
+  "termsLiability": "ParkinsonAid s'efforce de fournir des résultats précis et fiables. Cependant, nous ne garantissons pas l'exactitude, l'exhaustivité ou l'actualité de l'analyse IA.",
+  "termsUserResponsibilitiesTitle": "8. Responsabilités de l'Utilisateur",
+  "termsUserResponsibilities": "En tant que professionnel de la santé utilisant ParkinsonAid, vous êtes responsable de la sécurité de votre compte.",
+  "termsModificationsTitle": "9. Modifications du Service",
+  "termsModifications": "Nous nous réservons le droit de modifier, mettre à jour ou interrompre les fonctionnalités de ParkinsonAid sans préavis.",
+  "backButton": "Retour",
+  "upload": {
+    "title": "Téléchargez des images IRM pour la prédiction de la maladie de Parkinson",
+    "dropzoneInstruction": "Glissez-déposez une image IRM",
+    "dropzoneSupportedFormats": "Formats pris en charge : JPEG, PNG",
+    "uploadProgress": {
+      "attempted": "Téléchargement - ",
+      "attemptedtwo": " images tentées",
+      "uploaded": "Téléchargées : ",
+      "failed": " Échouées : "
+    },
+    "status": {
+      "uploading": "Téléchargement en cours",
+      "uploaded": " Téléchargé",
+      "failed": "Échoué"
+    },
+    "deleteButton": "Supprimer",
+    "showPredictionButton": "Afficher la prédiction"
+  },
+  "viewMorePatient": {
+    "loading": "Chargement...",
+    "title": "Informations sur le patient",
+    "name": "Nom",
+    "id": "ID Patient",
+    "birthday": "Date de naissance",
+    "gender": "Sexe",
+    "phone": "Numéro de téléphone",
+    "email": "Adresse e-mail",
+    "numberOfIRM": "Nombre d'IRM",
+    "diagnosisResult": "Résultat du diagnostic",
+    "description": "Description",
+    "lastUpdate": "Date de la dernière mise à jour",
+    "doctorName": "Nom du médecin",
+    "emergencyContact": {
+      "title": "Personne à contacter en cas d'urgence",
+      "name": "Nom",
+      "relation": "Relation avec le patient",
+      "phone": "Numéro de téléphone"
+    },
+    "backButton": "Retour"
+  }
+    
+    
+    
+  
+  
+    
+    
+  }
+  

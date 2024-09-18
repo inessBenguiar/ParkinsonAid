@@ -1,12 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import ProfilDoctorPage from './pages/ProfilDoctor';
+import HomeP from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <ProfilDoctorPage />
+      <HomeP />
     </div>
   );
 }

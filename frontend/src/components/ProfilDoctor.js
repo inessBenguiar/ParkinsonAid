@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import './ProfilDoctor.css';
 import Nav from './Nav';
 import defaultProfilePic from '../assets/images/profile-place.jpg';  // Place l'image par défaut ici
+import { useTranslation } from 'react-i18next';
 
 const ProfilDoctor = () => {
+  const { t } = useTranslation();
+  
   const [doctorData, setDoctorData] = useState({
     name: '',
     dob: '',
@@ -33,7 +36,6 @@ const ProfilDoctor = () => {
     console.log(doctorData);
   };
 
-  // Define handleExit function here, within the component
   const handleExit = () => {
     // Logic to exit or navigate away
     console.log("Exit button clicked");
@@ -44,19 +46,19 @@ const ProfilDoctor = () => {
     <div className="profil-doctor-page">
         <Nav />
       <form className="doctor-form" onSubmit={handleSubmit}>
-        <h2>Doctor's Profile</h2>
+        <h2>{t('profileDoctor.title')}</h2>
         <div className="form-group">
           <div className="form-left">
-            <label>Name:</label>
+            <label>{t('profileDoctor.nameLabel')}</label>
             <input
               type="text"
               name="name"
-              placeholder="Enter doctor's name"
+              placeholder={t('profileDoctor.placeholderName')}
               value={doctorData.name}
               onChange={handleInputChange}
             />
 
-            <label>Date of Birth:</label>
+            <label>{t('profileDoctor.dobLabel')}</label>
             <input
               type="date"
               name="dob"
@@ -64,29 +66,28 @@ const ProfilDoctor = () => {
               onChange={handleInputChange}
             />
 
-            <label>Email Address:</label>
+            <label>{t('profileDoctor.emailLabel')}</label>
             <input
               type="email"
               name="email"
-              placeholder="Enter email address"
+              placeholder={t('profileDoctor.placeholderEmail')}
               value={doctorData.email}
               onChange={handleInputChange}
             />
 
-            <label>Phone Number:</label>
+            <label>{t('profileDoctor.phoneNumberLabel')}</label>
             <input
               type="text"
               name="phoneNumber"
-              placeholder="Enter phone number"
+              placeholder={t('profileDoctor.placeholderPhoneNumber')}
               value={doctorData.phoneNumber}
               onChange={handleInputChange}
             />
 
-            
           </div>
 
           <div className="form-right">
-            <label> <strong>Upload Personal Picture</strong></label>
+            <label><strong>{t('profileDoctor.uploadPicLabel')}</strong></label>
             <div className="profile-pic-container">
               <label htmlFor="profilePicInput">
                 <img
@@ -99,7 +100,7 @@ const ProfilDoctor = () => {
                   className="profile-pic"
                 />
                 <div className="overlay">
-                  <span className="upload-text">Add Photo</span>
+                  <span className="upload-text">{t('profileDoctor.addPhotoText')}</span>
                 </div>
               </label>
               <input
@@ -115,8 +116,8 @@ const ProfilDoctor = () => {
         </div>
 
         <div className="form-buttons">
-          <button type="submit" className="save-btn">Save Profile</button>
-          <button type="button" className="exit-btn" onClick={handleExit}>Exit</button>
+          <button type="submit" className="save-btn">{t('profileDoctor.saveProfileButton')}</button>
+          <button type="button" className="exit-btn" onClick={handleExit}>{t('profileDoctor.exitButton')}</button>
         </div>
       </form>
     </div>

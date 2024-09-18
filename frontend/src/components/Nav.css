@@ -1,4 +1,4 @@
-.nav {
+.nav-custom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,20 +107,20 @@
 
 
 /* Styles for the user profile section */
-.user-profile {
+.user-profile-custom {
   position: relative;
   cursor: pointer;
   margin-left: 15px; /* Space between language switcher and profile pic */
 }
 
-.profile-pic {
+.profile-pic-custom {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   transition: opacity 0.25s ease-in-out;
 }
 
-.profile-pic:hover {
+.profile-pic-custom:hover {
   opacity: 0.8;
 }
 

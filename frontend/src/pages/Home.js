@@ -1,20 +1,13 @@
 import React from 'react';
-import Header from '../components/Header';  // One level up to access the components directory
-import Navbar1 from '../components/Navbar1';
-import BeginSection from '../components/BeginSection';
-import HowSection from '../components/HowSection';
-import Footer from '../components/Footer';
+import Home from '../components/Home';  // One level up to access the components directory
 
-const Home = () => {
+
+function HomeP () {
   return (
     <div>
-      <Navbar1 />
-      <Header />
-      <BeginSection />
-      <HowSection />
-      <Footer />
+      <Home/>
     </div>
   );
 };
 
-export default Home;
+export default HomeP;

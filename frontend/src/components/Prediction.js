@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Nav from '../components/Nav';
+import { useTranslation } from 'react-i18next';
 import "./Prediction.css";
 
 function Prediction() {
+  const { t } = useTranslation();
   const [isConnected, setIsConnected] = useState(true);
   const userProfile = {
     name: 'John Doe',
@@ -27,8 +29,8 @@ function Prediction() {
       
       {/* Main Prediction Section */}
       <div className="prediction-content">
-        <h2>Prediction Results</h2>
-        <p>You have uploaded 3 MRI images</p>
+        <h2>{t('prediction.title')}</h2>
+        <p>{t('prediction.uploadedImages')}</p>
 
         {/* Circular Progress Bar */}
         <div className="circular-progress">
@@ -39,13 +41,13 @@ function Prediction() {
 
         {/* Prediction Description */}
         <p className="prediction-text">
-          The MRI images indicate a high likelihood of Parkinson's disease.
+          {t('prediction.predictionResult')}
         </p>
 
         {/* Buttons */}
         <div className="button-group">
-          <button className='btn'>Save</button>
-          <button className='btn'>Exit</button>
+          <button className='btn'>{t('prediction.saveButton')}</button>
+          <button className='btn'>{t('prediction.exitButton')}</button>
         </div>
       </div>
     </div>

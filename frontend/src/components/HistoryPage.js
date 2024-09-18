@@ -3,8 +3,10 @@ import Nav from './Nav';
 import './HistoryPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 function HistoryPage() {
+    const { t } = useTranslation();
     const [diagnosisHistory, setDiagnosisHistory] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
     const [sortOption, setSortOption] = useState("");
@@ -74,19 +76,19 @@ function HistoryPage() {
             <Nav />
             <div className="history-content">
                 <div className="title-with-image">
-                    <h1>Diagnosis History</h1>
-                    </div>
+                    <h1>{t('history.title')}</h1>
+                </div>
 
                 <div className="search-and-filter">
                     <div className="filter-dropdown">
                         <button className="filter-button" onClick={toggleDropdown}>
-                            Filter <FontAwesomeIcon icon={faChevronDown} />
+                            {t('history.filterButton')} <FontAwesomeIcon icon={faChevronDown} />
                         </button>
                         {isDropdownOpen && (
                             <div className="dropdown-menu-modern">
-                                <button onClick={() => handleSort("name")}>By Patient Name</button>
-                                <button onClick={() => handleSort("doctor")}>By Doctor Name</button>
-                                <button onClick={() => handleSort("date")}>By Date</button>
+                                <button onClick={() => handleSort("name")}>{t('history.filterByName')}</button>
+                                <button onClick={() => handleSort("doctor")}>{t('history.filterByDoctor')}</button>
+                                <button onClick={() => handleSort("date")}>{t('history.filterByDate')}</button>
                             </div>
                         )}
                     </div>
@@ -94,7 +96,7 @@ function HistoryPage() {
                     <div className="search-bar">
                         <input
                             type="text"
-                            placeholder="Search for patients..."
+                            placeholder={t('history.searchPlaceholder')}
                             value={searchQuery}
                             onChange={handleSearch}
                         />
@@ -107,16 +109,16 @@ function HistoryPage() {
                             <div className="diagnosis-info">
                                 <div className="diagnosis-details">
                                     <h2>{diagnosis.patientName}</h2>
-                                    <p>Ref By: {diagnosis.doctorName}</p>
-                                    <p>Diagnosis: {diagnosis.isPositive ? "Yes" : "No"}</p>
+                                    <p>{t('history.refBy')}: {diagnosis.doctorName}</p>
+                                    <p>{t('history.diagnosis')}: {diagnosis.isPositive ? t('history.positive') : t('history.negative')}</p>
                                 </div>
                             </div>
                             <div className="diagnosis-date">
                                 <p>{new Date(diagnosis.date).toLocaleDateString()}</p>
                             </div>
                             <div className="diagnosis-actions">
-                                <button>View More</button>
-                                <button>Update</button>
+                                <button>{t('history.viewMore')}</button>
+                                <button>{t('history.update')}</button>
                             </div>
                         </div>
                     ))}
