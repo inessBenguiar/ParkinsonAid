@@ -1,31 +1,31 @@
-// src/components/Nav.js
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next'; // Importez le hook useTranslation
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'; // Importer Link
 import './Nav.css';
 
 const Nav = ({ userProfile, handleLogout }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const { t, i18n } = useTranslation(); // Utilisez le hook useTranslation
+  const { t, i18n } = useTranslation();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   const handleLanguageChange = (event) => {
-    i18n.changeLanguage(event.target.value); // Change la langue sélectionnée
+    i18n.changeLanguage(event.target.value);
   };
 
   return (
     <nav className="nav-custom">
       <div className="nav-logo">
-        <a href="#">
+        <Link to="/">
           <span className="logo-green">PARKINSON</span> <span className="logo-black">AID</span>
-        </a>
+        </Link>
       </div>
       <ul className="nav-menu">
-        <li><a href="#">{t('nav.menu')}</a></li>
-        <li><a href="#">{t('nav.about')}</a></li>
-        <li><a href="#" className="active">{t('nav.contact')}</a></li>
+        <li><Link to="/">{t('nav.menu')}</Link></li>
+        <li><Link to="/about">{t('nav.about')}</Link></li>
+        <li><Link to="/contact" className="active">{t('nav.contact')}</Link></li>
       </ul>
       <div className="nav-buttons">
         <div className="language-switcher">

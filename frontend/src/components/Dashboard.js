@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';  // Import pour la traduction
-import Nav from "./Nav";
+import { useNavigate } from 'react-router-dom';  // Import pour la navigation
+import Nav from './Nav';
 import './Dashboard.css';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
@@ -9,6 +10,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 function Dashboard() {
     const { t } = useTranslation();  // Hook pour la traduction
+    const navigate = useNavigate();  // Hook pour naviguer entre les pages
     const [isConnected, setIsConnected] = useState(true);
     const [searchQuery, setSearchQuery] = useState("");
 
@@ -100,9 +102,24 @@ function Dashboard() {
                 </div>
 
                 <div className="dashboard-buttons">
-                    <button className="dashboard-button">{t('dashboard.viewHistoryButton')}</button>
-                    <button className="dashboard-button">{t('dashboard.newDiagnosisButton')}</button>
-                    <button className="dashboard-button">{t('dashboard.updateProfileButton')}</button>
+                    <button 
+                        className="dashboard-button" 
+                        onClick={() => navigate('/history')}
+                    >
+                        {t('dashboard.viewHistoryButton')}
+                    </button>
+                    <button 
+                        className="dashboard-button" 
+                        onClick={() => navigate('/upload')}
+                    >
+                        {t('dashboard.newDiagnosisButton')}
+                    </button>
+                    <button 
+                        className="dashboard-button" 
+                        onClick={() => navigate('/profil-doctor')}
+                    >
+                        {t('dashboard.updateProfileButton')}
+                    </button>
                 </div>
             </div>
         </div>

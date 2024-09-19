@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.highlight {
+.highlightAbout {
   color: #34c759;
 }
 
@@ -44,7 +44,7 @@
 .section-text {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: #000000;
 }
 
 /* Styles pour la deuxième partie */

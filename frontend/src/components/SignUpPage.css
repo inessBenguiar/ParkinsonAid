@@ -117,7 +117,7 @@
 
 /* Style pour la case à cocher des conditions générales */
 /* Style pour la case à cocher et le texte des conditions générales */
-.input-group label {
+.signup-page .input-group label {
   font-size: 14px;
   color: white;
   display: flex;
@@ -126,33 +126,33 @@
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
 }
 
-.input-group input[type="checkbox"] {
+.signup-page .input-group input[type="checkbox"] {
   margin-right: 10px;
 }
 
 /* Style du lien "terms & conditions" */
-.input-group a {
+.signup-page .input-group a {
   color: #12C675; /* Couleur verte pour le lien "terms & conditions" */
   text-decoration: none;
 }
 
-.input-group a:hover {
+.signup-page .input-group a:hover {
   text-decoration: underline;
 }
 
 
-.terms-link {
+.signup-page .terms-link {
   color: #12C675; /* Couleur verte */
   text-decoration: none;
   margin-left: 5px; /* Ajoute un espace avant le lien */
 }
 
-.terms-link:hover {
+.signup-page .terms-link:hover {
   text-decoration: underline;
 }
 
 /* Style du message d'erreur */
-.error-message {
+.signup-page .error-message {
   color: red;
   font-size: 12px;
   margin-top: 10px;

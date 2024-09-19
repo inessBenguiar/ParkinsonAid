@@ -4,6 +4,7 @@ import './HistoryPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom'; // Importer useNavigate
 
 function HistoryPage() {
     const { t } = useTranslation();
@@ -11,6 +12,7 @@ function HistoryPage() {
     const [searchQuery, setSearchQuery] = useState("");
     const [sortOption, setSortOption] = useState("");
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const navigate = useNavigate(); // Initialiser useNavigate
 
     const mockData = [
         {
@@ -71,6 +73,16 @@ function HistoryPage() {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    // Fonction pour rediriger vers la page SavePatient avec le nom du patient
+    const handleUpdate = (patientName) => {
+        navigate(`/save-patient/${patientName}`);
+    };
+
+    // Fonction pour rediriger vers la page ViewMore avec le nom du patient
+    const handleViewMore = (patientName) => {
+        navigate(`/view-more/${patientName}`);
+    };
+
     return (
         <div className="history-page">
             <Nav />
@@ -117,8 +129,12 @@ function HistoryPage() {
                                 <p>{new Date(diagnosis.date).toLocaleDateString()}</p>
                             </div>
                             <div className="diagnosis-actions">
-                                <button>{t('history.viewMore')}</button>
-                                <button>{t('history.update')}</button>
+                                <button onClick={() => handleViewMore(diagnosis.patientName)}>
+                                    {t('history.viewMore')}
+                                </button>
+                                <button onClick={() => handleUpdate(diagnosis.patientName)}>
+                                    {t('history.update')}
+                                </button>
                             </div>
                         </div>
                     ))}

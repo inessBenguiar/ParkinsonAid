@@ -14,7 +14,7 @@ const AboutPage = () => {
       <Nav />
       <div className="about-container">
         {/* Première partie */}
-        <h1>{t('about.title')} <span className="highlight">PARKINSON</span> AID</h1>
+        <h1>{t('about.title')} <span className="highlightAbout">PARKINSON</span> AID</h1>
 
         <div className="about-sections">
           <div className="about-section">

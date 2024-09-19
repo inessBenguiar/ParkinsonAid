@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Nav from '../components/Nav';
 import { useDropzone } from 'react-dropzone';
-import { useTranslation } from 'react-i18next';  // Import de la traduction
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom'; // Importer useNavigate
 import "./Upload.css";
 
 function Upload() {
-    const { t } = useTranslation();  // Utilisation du hook de traduction
+    const { t } = useTranslation();
     const [isConnected, setIsConnected] = useState(true);
     const [uploadedFiles, setUploadedFiles] = useState([]);
 
@@ -14,54 +15,55 @@ function Upload() {
         image: 'https://via.placeholder.com/40',
     };
 
+    const navigate = useNavigate(); // Initialiser useNavigate
+
     const handleLogout = () => {
         setIsConnected(false);
     };
 
-    // Gestion du dépôt de fichiers
     const onDrop = (acceptedFiles) => {
         const newFiles = acceptedFiles.map(file => ({
             name: file.name,
-            status: 'uploading', // Statut initial
+            status: 'uploading',
             preview: URL.createObjectURL(file),
         }));
 
-        // Simuler le téléchargement de fichiers et mise à jour du statut
         setUploadedFiles(prevFiles => [...prevFiles, ...newFiles]);
         setTimeout(() => {
             const updatedFiles = newFiles.map(file => ({
                 ...file,
-                status: Math.random() > 0.2 ? 'uploaded' : 'failed', // Simuler un succès ou un échec aléatoire
+                status: Math.random() > 0.2 ? 'uploaded' : 'failed',
             }));
             setUploadedFiles(prevFiles => prevFiles.map(file => {
                 const updatedFile = updatedFiles.find(f => f.name === file.name);
                 return updatedFile || file;
             }));
-        }, 2000); // Simuler un téléchargement de 2 secondes
+        }, 2000);
     };
 
-    // Gestion de la suppression des fichiers
     const handleDelete = (fileName) => {
         setUploadedFiles(prevFiles => prevFiles.filter(file => file.name !== fileName));
     };
 
     const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: 'image/jpeg, image/png' });
 
+    // Fonction pour rediriger vers la page Prediction avec les fichiers téléchargés
+    const handleShowPrediction = () => {
+        navigate('/prediction', { state: { files: uploadedFiles } }); // Passer les fichiers via l'état de navigation
+    };
+
     return (
         <div className="upload-page">
             <Nav userProfile={isConnected ? userProfile : null} handleLogout={handleLogout} />
 
-            {/* Titre de la page */}
             <h2 className="upload-title">{t('upload.title')}</h2>
 
-            {/* Zone de dépôt de fichiers */}
             <div className="dropzone" {...getRootProps()}>
                 <input {...getInputProps()} />
                 <p>{t('upload.dropzoneInstruction')}</p>
                 <p>{t('upload.dropzoneSupportedFormats')}</p>
             </div>
 
-            {/* Calculer le nombre total de tentatives de téléchargement */}
             <div className="upload-progress">
                 <h3>
                     {t('upload.uploadProgress.attempted')}{uploadedFiles.length}{t('upload.uploadProgress.attemptedtwo')}
@@ -80,8 +82,7 @@ function Upload() {
                 ))}
             </div>
 
-            {/* Bouton Afficher la prédiction */}
-            <button className="show-prediction-btn">{t('upload.showPredictionButton')}</button>
+            <button onClick={handleShowPrediction} className="show-prediction-btn">{t('upload.showPredictionButton')}</button>
         </div>
     );
 }

@@ -37,7 +37,7 @@
     background-color: transparent; /* Optionnel: Ajoute un fond sombre semi-transparent pour améliorer la lisibilité du texte */
 }
 
-.login-title {
+.login-titleLog {
     font-size: 28px;
     color: #000000; /* Texte blanc pour contraster avec l'image */
     margin-bottom: 20px;
@@ -48,14 +48,14 @@
     text-align: left;
 }
 
-.input-group label {
+.login-page .input-group label {
     font-size: 14px;
     color: #242424;
     margin-bottom: 5px;
     display: block;
 }
 
-.input-group input {
+.login-page .input-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -63,7 +63,7 @@
     font-size: 14px;
 }
 
-.login-button {
+.login-page .login-button {
     width: 100%;
     padding: 12px;
     background-color: #1abc9c;
@@ -76,23 +76,24 @@
     margin-top: 20px;
 }
 
-.login-button:hover {
+.login-page .login-button:hover {
     background-color: #16a085;
 }
 
-.login-footer {
+.login-page .login-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.login-footer a {
+.login-page .login-footer a {
     font-size: 14px;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
-.login-footer a:hover {
+.login-page .login-footer a:hover {
     text-decoration: underline;
 }
