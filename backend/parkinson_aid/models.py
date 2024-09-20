@@ -26,7 +26,7 @@ class Patient(models.Model):
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     phone_number = models.CharField(max_length=15)
     email = models.EmailField()
-    diagnosis_result = models.CharField(max_length=200)  # ??????????????????????????
+    diagnosis_result = models.BooleanField(default=False)
     description = models.TextField()
     date_of_last_update = models.DateField(auto_now=True)
     doctor_name = models.CharField(max_length=100)
