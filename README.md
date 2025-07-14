@@ -46,7 +46,7 @@
 
 ---
 
-## 🚀 Future Improvements (Optional)
+## 🚀 Future Improvements
 - Authentication with JWT
 - Doctor-specific analysis history
 - Integration with hospital information systems (HIS)
