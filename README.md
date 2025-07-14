@@ -46,37 +46,7 @@
 
 ---
 
-## 📁 Folder Structure (simplified)
-
-```
-
-/frontend/
-└── src/
-└── components/
-└── pages/
-└── i18n/
-└── assets/
-
-/backend/
-└── api/
-└── models/
-└── views/
-└── serializers/
-└── urls.py
-
-/machine\_learning/
-└── mobilenet\_model/
-└── inference/
-
-```
-
----
-
 ## 🚀 Future Improvements (Optional)
 - Authentication with JWT
 - Doctor-specific analysis history
 - Integration with hospital information systems (HIS)
-
----
-
-
