@@ -1,0 +1,320 @@
+{
+    "nav": {
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "languageSwitcher": {
+      "en": "English",
+      "fr": "French"
+    },
+    "logout": "Logout"
+  },
+    "about": {
+      "title": "About ",
+      "sections": {
+        "projectInfoTitle": "Project Information",
+        "projectInfo": "PARKINSON AID is a web-based application designed to assist neurologists in the diagnosis of Parkinson's disease using MRI images. The platform allows medical professionals to upload multiple MRI scans simultaneously and receive a binary result indicating the presence or absence of Parkinson's disease. As part of a practical internship, this work is done by a pair of students.",
+        "technicalDetailsTitle": "Technical Details",
+        "technicalDetails": "Our project leverages machine learning techniques to assist doctors in diagnosing Parkinson's disease using MRI images. It uses the NTUA Parkinson’s Dataset. Before feeding the images into our models, we apply several preprocessing techniques to enhance their quality and make them more suitable for analysis, and then we train our model to learn the differences between healthy and Parkinson’s-affected brains."
+      },
+      "visionMissionValues": {
+        "title": "Our Vision, Mission, and Values",
+        "visionTitle": "Vision",
+        "vision": "Our vision is to revolutionize the early diagnosis of Parkinson's disease through innovative technology, making advanced diagnostic tools accessible to medical professionals. We aim to empower healthcare providers with accurate, efficient, and reliable solutions that enhance patient care and improve outcomes.",
+        "missionTitle": "Mission",
+        "mission": "Our mission is to develop a user-friendly, AI-powered platform that assists neurologists in the timely and accurate diagnosis of Parkinson's disease. We strive to bridge the gap between cutting-edge technology and clinical practice by offering a robust tool that simplifies the diagnostic process, enabling doctors to focus on patient care.",
+        "valuesTitle": "Values",
+        "values": 
+        {
+          "valueone": "-   Accuracy:",
+          "valueonetext": "Ensuring the highest level of diagnostic precision is our top priority, as we understand the critical importance of accurate medical assessments.",
+          "valuetwo": "-   Accessibility: ",
+          "valuetwotext": "We believe in making advanced diagnostic technologies accessible to all healthcare providers, regardless of their location or resources.",
+          "valuethree": "-   Collaboration: ",
+          "valuethreetext": " We value the power of teamwork and collaboration, working closely with medical professionals to continuously improve our platform based on their feedback and needs.",
+          "valuefour": "-   Integrity: ",
+          "valuefourtext": "We uphold the highest standards of integrity in our work, ensuring the confidentiality and security of patient data while delivering trustworthy results",
+          "valuefive": "-   Empathy: ",
+          "valuefivetext": "We recognize the human element in healthcare and strive to support doctors and patients with compassionate, user-centric solutions."
+        }
+      },
+      "team": {
+        "title": "Team",
+        "members": {
+          "ikram": {
+            "name": "ZERROUKI Ikram",
+            "description": "Computer science student at High National School Of Computer Science - ESI",
+            "linkedin": "LinkedIn",
+            "gmail": "Gmail"
+          },
+          "safia": {
+            "name": "BENGUIAR Safia Ines",
+            "description": "Computer science student at High National School Of Computer Science - ESI",
+            "linkedin": "LinkedIn",
+            "gmail": "Gmail"
+          }
+        }
+      },
+      "supervisedBy": {
+        "title": "Supervised By",
+        "name": "Ms. Boulkrinat Nour El Houda",
+        "position": "Research associate - Information Systems and Multimedia Systems Division (DSISM)",
+        "organization": "Center for Research on Scientific and Technical Information - CERIST",
+        "address": "5 Rue des 3 Frères Aïssou, Ben Aknoun BP 16030 Alger",
+        "phone": "Phone: 021 91 21 86",
+        "email": "Email: nboulkrinat@cerist.dz, nboulkrinat@cerist.dz"
+      }
+    },
+    "contact": {
+    "title": "Contact Us",
+    "formInstructions": "Please fill out the form below to send us an email and we will respond as soon as possible.",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Message",
+    "submitButton": "Submit",
+    "feedbackTitle": "Send Feedback",
+    "feedbackInstructions": "Your feedback is important to us! Please let us know how we can improve our service or share any thoughts you have about ParkinsonAid.",
+    "feedbackButton": "Fill in the form",
+    "contactInfoTitle": "Contact Information",
+    "address": "5 Rue des 3 Frères Aïssou, Ben Aknoun BP 16030 Alger",
+    "phone": "021 91 21 86",
+    "email": "nboulkrinat@cerist.dz , nboulkrinat@gmail.com"
+  }
+  ,
+  "dashboard": {
+    "welcome": "Welcome, Dr {{name}}!",
+    "searchPlaceholder": "Search for patients...",
+    "genderHeading": "Gender Data:",
+    "diagnosisHeading": "Diagnosis Data:",
+    "viewHistoryButton": "View Diagnosis History",
+    "newDiagnosisButton": "New Diagnosis",
+    "updateProfileButton": "Update Profile"
+  },
+  "history": {
+    "title": "Diagnosis History",
+    "filterButton": "Filter",
+    "filterByName": "By Patient Name",
+    "filterByDoctor": "By Doctor Name",
+    "filterByDate": "By Date",
+    "searchPlaceholder": "Search for patients...",
+    "refBy": "Ref By",
+    "diagnosis": "Diagnosis",
+    "positive": "Yes",
+    "negative": "No",
+    "viewMore": "View More",
+    "update": "Update"
+  },
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login",
+    "createAccount": "Create an Account",
+    "forgotPassword": "Forgot Password?"
+  },
+  "prediction": {
+    "title": "Prediction Results",
+    "uploadedImages": "You have uploaded 3 MRI images",
+    "predictionResult": "The MRI images indicate a high likelihood of Parkinson's disease.",
+    "saveButton": "Save",
+    "exitButton": "Exit"
+  },
+  
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "At ParkinsonAid, developed by CERIST (Centre de Recherche sur l'Information Scientifique et Technique), your privacy is important to us. We understand the importance of safeguarding the privacy and confidentiality of personal and medical information. This Privacy Policy outlines how we collect, use, and protect the data you submit through our platform, specifically tailored for healthcare professionals.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "content": "We collect MRI images and related medical data solely for the purpose of providing AI-driven analysis to assist in detecting Parkinson's disease. This data is treated with the highest level of confidentiality."
+    },
+    "section2": {
+      "title": "2. How We Use Your Information",
+      "content": "The data collected on ParkinsonAid is used exclusively for the following purposes:"
+    },
+    "section3": {
+      "title": "3. Data Sharing and Disclosure",
+      "content": "No personal data or medical information is used for commercial purposes or shared with external parties for research without your explicit consent."
+    },
+    "section4": {
+      "title": "4. Data Security",
+      "content": "We take data security seriously and implement industry-standard measures to ensure that all personal information and medical data are securely stored and processed."
+    },
+    "section5": {
+      "title": "5. Data Retention",
+      "content": "Medical data submitted to ParkinsonAid is retained only for the time necessary to perform the AI analysis and provide results."
+    },
+    "section6": {
+      "title": "6. Your Privacy Rights",
+      "content": "As a healthcare professional using ParkinsonAid, you have the following rights regarding your data:"
+    },
+    "section7": {
+      "title": "7. Third-Party Links",
+      "content": "Our platform may contain links to external websites. Please note that this Privacy Policy does not apply to those third-party websites."
+    },
+    "section8": {
+      "title": "8. Changes to This Privacy Policy",
+      "content": "We reserve the right to update this Privacy Policy from time to time to reflect changes in regulations or our services."
+    },
+    "section9": {
+      "title": "9. Contact Us",
+      "content": "If you have any questions or concerns regarding this Privacy Policy, please contact us:"
+    },
+    "backButton": "Back"
+
+  },
+  "profileDoctor": {
+  "title": "Doctor's Profile",
+  "nameLabel": "Name:",
+  "dobLabel": "Date of Birth:",
+  "emailLabel": "Email Address:",
+  "phoneNumberLabel": "Phone Number:",
+  "uploadPicLabel": "Upload Personal Picture",
+  "addPhotoText": "Add Photo",
+  "saveProfileButton": "Save Profile",
+  "exitButton": "Exit",
+  "placeholderName": "Enter doctor's name",
+  "placeholderEmail": "Enter email address",
+  "placeholderPhoneNumber": "Enter phone number"
+},
+"savePatient": {
+      "patientTitle": "Patient",
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter patient name",
+      "idLabel": "ID Patient",
+      "idPlaceholder": "Enter patient ID",
+      "dobLabel": "Date Of Birth",
+      "genderLabel": "Gender",
+      "genderPlaceholder": "Select gender",
+      "male": "Male",
+      "female": "Female",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "Enter phone number",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter email address",
+      "irmLabel": "Number Of MRI Images",
+      "irmPlaceholder": "Enter number",
+      "diagnosisLabel": "Diagnosis Result",
+      "diagnosisPlaceholder": "Enter diagnosis result",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Enter description",
+      "updateLabel": "Date Of Last Update",
+      "doctorLabel": "Name Of Doctor",
+      "doctorPlaceholder": "Enter doctor's name",
+      "emergencyTitle": "Person To Contact In Case Of Emergency - Tap (/) If Not",
+      "emergencyNameLabel": "Name",
+      "emergencyNamePlaceholder": "Enter emergency contact name",
+      "relationLabel": "Relation With Patient",
+      "relationPlaceholder": "Enter relation",
+      "emergencyPhoneLabel": "Phone Number",
+      "emergencyPhonePlaceholder": "Enter phone number",
+      "submitButton": "Submit"
+    },
+    "signup": {
+      "title": "Sign Up",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Enter your password",
+      "agreeTerms": "I read and agree to",
+      "termsLink": "terms & conditions",
+      "errorMessage": "You must agree to the terms & conditions before signing up.",
+      "alreadyAccount": "Already have an Account?",
+      "loginLink": "Log In",
+      "signupButton": "Sign Up"
+    },
+    "termsTitle": "Terms & Conditions",
+  "termsWelcome": "Welcome to ParkinsonAid, a platform dedicated to providing advanced AI-driven analysis of MRI images for the early detection of Parkinson's disease. By accessing or using our platform, you agree to comply with and be bound by the following terms and conditions. Please read them carefully, as they govern your use of our website and services.",
+  "termsAcceptanceTitle": "1. Acceptance of Terms",
+  "termsAcceptance": "By using ParkinsonAid, you acknowledge that you are a licensed medical professional and that you agree to be bound by these terms.",
+  "termsProfessionalUseTitle": "2. Professional Use Only",
+  "termsProfessionalUse": "This platform is exclusively intended for use by qualified healthcare providers, including physicians, neurologists, and other medical professionals.",
+  "termsDataPrivacyTitle": "3. Data Privacy and Confidentiality",
+  "termsDataPrivacy": "We are committed to safeguarding the confidentiality of your patients' medical data.",
+  "termsMedicalDisclaimerTitle": "4. Medical Disclaimer",
+  "termsMedicalDisclaimer": "The AI analysis provided by ParkinsonAid is intended as a supplementary tool to support the clinical evaluation of Parkinson's disease.",
+  "termsDataSecurityTitle": "5. Data Security and Integrity",
+  "termsDataSecurity": "ParkinsonAid implements security measures to protect patient data and ensure the integrity of our AI models.",
+  "termsIntellectualPropertyTitle": "6. Intellectual Property",
+  "termsIntellectualProperty": "The intellectual property rights for all content and software on the ParkinsonAid platform, including AI models, belong to ParkinsonAid or our licensors.",
+  "termsLiabilityTitle": "7. Limitation of Liability",
+  "termsLiability": "ParkinsonAid strives to provide accurate and reliable results.",
+  "termsUserResponsibilitiesTitle": "8. User Responsibilities",
+  "termsUserResponsibilities": "As a healthcare professional using ParkinsonAid, you are responsible for maintaining the security of your account.",
+  "termsModificationsTitle": "9. Modifications to the Service",
+  "termsModifications": "We reserve the right to modify, update, or discontinue any features of ParkinsonAid without prior notice.",
+  "backButton": "Back",
+  "upload": {
+    "title": "Upload MRI Images for Parkinson's Prediction",
+    "dropzoneInstruction": "Drag & drop MRI image",
+    "dropzoneSupportedFormats": "Supported formats: JPEG, PNG",
+    "uploadProgress": {
+      "attempted": "Uploading - ",
+      "attemptedtwo": " images attempted",
+      "uploaded": "Uploaded: ",
+      "failed": "Failed: "
+    },
+    "status": {
+      "uploading": "Uploading",
+      "uploaded": "Uploaded",
+      "failed": "Failed"
+    },
+    "deleteButton": "Delete",
+    "showPredictionButton": "Show Prediction"
+
+  },
+  "viewMorePatient": {
+    "loading": "Loading...",
+    "title": "Patient Information",
+    "name": "Name",
+    "id": "ID Patient",
+    "birthday": "Date Of Birthday",
+    "gender": "Gender",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "numberOfIRM": "Number Of IRM Images",
+    "diagnosisResult": "Diagnosis Result",
+    "description": "Description",
+    "lastUpdate": "Date Of Last Update",
+    "doctorName": "Name Of Doctor",
+    "emergencyContact": {
+      "title": "Person To Contact In Case Of Emergency",
+      "name": "Name",
+      "relation": "Relation With Patient",
+      "phone": "Phone Number"
+    },
+    "backButton": "Back"
+  },
+  "menuHome": "Menu",
+    "aboutHome": "About",
+    "contactHome": "Contact",
+    "loginHome": "Log In",
+    "signupHome": "Sign Up",
+    "headerHome": {
+      "titleHome": "Detect",
+      "highlightHome": "Parkinson",
+      "subtitleHome": "With Precision, Act With ",
+      "ConfidenceHome": "Confidence"
+    },
+    "infoSectionHome": {
+      "title1Home": "How to begin using Parkinson Aid",
+      "description1Home": "Parkinson Aid is designed exclusively for neurologists and healthcare professionals to leverage advanced MRI-based diagnostics for Parkinson’s disease. By utilizing our platform, you can seamlessly upload and analyze high-resolution MRI scans using state-of-the-art AI algorithms tailored to detect early signs of Parkinson’s with exceptional accuracy. Once you sign up, you’ll be able to securely store and manage your patients' MRI data, allowing for ongoing monitoring and easy access to historical records. Begin your journey with Parkinson Aid today and integrate powerful, data-driven insights into your practice for improved patient care.",
+      "signUpHome": "Sign Up",
+      "title2Home": "How it works behind the scenes",
+      "description2Home": "Behind the scenes, Parkinson Aid harnesses the power of advanced machine learning to analyze MRI scans with precision and speed. Our AI model has been trained on thousands of images to recognize subtle patterns and changes in the brain that are early indicators of Parkinson’s disease. When a new MRI scan is uploaded, the model processes it, compares it with vast datasets, and identifies potential markers that might not be visible to the human eye. The result is a reliable, data-driven analysis that helps doctors make more informed decisions, all while continuously learning and improving from new data. This cutting-edge technology brings a new level of confidence and accuracy to Parkinson’s detection.",
+      "learnMoreHome": "Learn More"
+    },
+    "footerHome": {
+      "termsHome": "Terms & Conditions",
+      "privacyHome": "Privacy Policy",
+      "rightsHome": "All rights reserved"
+    }
+
+
+
+}
+  
